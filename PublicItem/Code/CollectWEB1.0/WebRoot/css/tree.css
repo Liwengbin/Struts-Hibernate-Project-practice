@@ -1,0 +1,425 @@
+.row > div > h3{
+	text-align: center;
+}
+#setBtn{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+ul{
+	padding-left:20px;
+}
+li{
+	list-style-type:none;
+}
+.tree-node:hover{
+	cursor:pointer;
+}
+a{
+	color:#000;
+	cursor: pointer;
+}
+a:hover{
+	text-decoration: none;
+	color:#1e9ced;
+}
+ul li i:first-child{
+	margin:0 5px;
+}
+
+.add-furl
+{
+	border-radius: 16px;
+	border: 1px solid #000;
+	margin-left: 5px;
+	padding-right: 4px;
+}
+.add-furl:hover
+{
+	border-color:#1e9ced;
+}
+
+#morf
+{
+	border:1px solid #000;
+	padding: 20px;
+}
+.tree
+{
+	font-size: 15px;
+}
+.tree li
+{
+	margin-bottom:3px; 
+}
+.ulhove li:hover
+{
+	background-color:#e7e7e7;
+}
+
+.coll-nav li
+{
+	position: relative;
+	white-space:nowrap; /* 强制不换行 */
+	/* overflow:hidden; 自动隐藏文字
+	text-overflow: ellipsis; 文字隐藏后添加省略号  */
+	display: in;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+#default_tree li
+{
+	white-space:nowrap; /* 强制不换行 */
+	overflow:hidden; /*自动隐藏文字*/
+	text-overflow: ellipsis; /*文字隐藏后添加省略号  */
+}
+#default_tree
+{
+	border-right: 1px solid #ddd;
+}
+.bottom-cross
+{
+	border-bottom: 1px solid #ddd;
+}
+	.tool
+	{
+		display: initial;
+		margin: 0;
+	}
+	.tooli
+	{
+		cursor:pointer;
+		font-size: 10px;
+	}
+	.tooli:HOVER
+	{
+		color: #e86507;
+	}
+	.nav-tool
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	.nav-tool li i:hover
+	{
+		color: #6cc;
+	}
+	.nav-tool li
+	{
+		margin-bottom: 5px;
+	}
+	.nav-tool li i
+	{
+		cursor: pointer;
+		font-size: 20px;
+	}
+	.client-spase
+	{
+		height: 60%;
+		overflow-y:auto;
+	}
+	.mes
+	{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: auto;
+	}
+	
+	.mes-right .mes-img
+	{
+		float: right;
+	}
+	
+	.mes-left .mes-img
+	{
+		float: left;
+	}
+	
+	.mes .mes-img
+	{
+		width: 10%;
+    	height: auto;
+	}
+	
+	.mes-left .mes-conttent
+	{
+		margin-top:10px;
+		margin-left: 10px;
+		float: left;
+	}
+	
+	.mes-right .mes-conttent
+	{
+		margin-top:10px;
+		margin-right: 10px;
+		float: right;
+	}
+	.mes-left .mes-conttent:BEFORE
+	{
+		content: " ";
+	    position: absolute;
+	    top: 9px;
+	    right: 100%;
+	    border: 10px solid transparent;
+	    border-right-color: #D9EDF7;
+	}
+	
+	.mes-right .mes-conttent:AFTER
+	{
+		right:-20px;
+		content: " ";
+	    position: absolute;
+	    top: 9px;
+	    border: 10px solid transparent;
+	    border-left-color: #D9EDF7;
+	}
+	.sendbtn
+	{
+		border-radius: 100px;
+		width: 100%;
+	}
+	.p0
+	{
+		padding: 0px;
+	}
+	
+	.client-spase .col-xs-8
+	{
+		width: auto;
+		max-width: 66.66666667%;
+	}
+	.filei-mport
+	{
+		height: 0;
+		width: 0;
+		display: none;
+	}
+	
+	#_namespan
+	{
+		font-size:16px;
+	}
+	
+	.importtom div
+	{
+		margin-bottom: 5px;
+	}
+	
+	.state-menu
+	{
+		min-width: auto;
+		text-align: center;
+	}
+	
+	.m0
+	{
+		margin: 0;
+	}
+	
+	.fa-folder
+	{
+		color: #FFB300;
+	}
+	.navli img
+	{
+		margin-right: 10px;
+		height: 16px;
+		width: 16px;
+	}
+	.navli a
+	{
+		width: 90%;
+		float: left;
+	}
+	
+	.navli span
+	{
+		float:right;
+		width: 10%;
+		padding: 6px 5px;
+		display: block;
+	}
+	.navli span:HOVER
+	{
+		background-color: #ccc;
+		cursor: pointer;
+	}
+	.selfnav-navul li
+	{
+		max-width:400px;
+		min-width:260px;
+	}
+	
+	.selfnav-navul li a
+	{
+		white-space:nowrap; /* 强制不换行 */
+		overflow:hidden; /*自动隐藏文字*/
+		text-overflow: ellipsis; /*文字隐藏后添加省略号  */
+	}
+	
+	.selfnav>li>a
+	{
+		padding: 10px 5px;
+	}
+	@media screen and (max-width: 650px) {/*当页面小于650时去掉浮动  */
+    .isline>li {
+        float: none;
+    }
+    .selfnav-navul
+    {
+    	width: 100%;
+    }
+	
+	.selfnav-navul li
+	{
+		max-width:100%;
+
+	}
+	
+    #_pcuc
+    {
+    display: none;
+    }
+    
+    #_msuc
+    {
+    	display: block;
+    }
+    .logoclass
+    {
+    	display: none;
+    }
+}
+
+.modalbtn {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 1050;
+    width: 560px;
+    margin-left: -280px;
+    border: 1px solid rgba(0,0,0,0.3);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: 0;
+}
+
+.fixed-btn {
+    position: fixed;
+    right: 1%;
+    bottom: 5%;
+    width: 40px;
+    border: 1px solid #eee;
+    background-color: white;
+    font-size: 24px;
+    z-index: 1040;
+    -webkit-backface-visibility: hidden;
+}
+
+.fixed-btn a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.fixed-btn .modalbtn.fade.in {
+    top: auto;
+    bottom: 0;
+    height: 188px;
+    width: 128px;
+    padding: 10px;
+    margin: 0;
+    right: 55px;
+    left: auto;
+    text-align: center;
+}
+
+.fixed-btn .modalbtn.fade.in:after, .fixed-btn .modalbtn.fade.in:before {
+    position: absolute;
+    top: 94px;
+    right: -8px;
+    content: '';
+    display: inline-block;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 9px solid white;
+}
+
+.fixed-btn .modalbtn.fade.in:before {
+    right: -9px;
+    border-left: 9px solid #d9d9d9;
+}
+
+.nav-btn
+{
+	margin-right: 30px;
+}
+.top-nav
+{
+	margin-top: 60px;
+}	
+	
+	
+/*对UC样式做改变*/
+
+#_pcuc
+	{width: 100%;
+	height: 100%; 
+	margin-top: -20px; 
+	border:0px;
+	}
+#_msuc
+{   
+	width: 100%;
+	height: 100%; 
+	margin-top: -20px; 
+	border:0px;
+ }	
+	
+.btn
+{
+	font-size: 10px;
+}
+
+body{
+	font-size: 10px;
+}
+
+.feednumbersty
+{
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius:20px;
+}	
+
+#_addfeedbtn
+{
+	cursor: pointer;
+}
+#_addfeedbtn:HOVER
+{
+	color: red;
+}
+
+.al
+{
+	border-radius:0px;
+}
+	

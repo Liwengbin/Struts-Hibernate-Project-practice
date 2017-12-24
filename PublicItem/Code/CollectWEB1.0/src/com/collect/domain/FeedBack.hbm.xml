@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.collect.domain">
+
+   <class name="FeedBack" table="collfeedback">
+     <id name="feedid" column="feedid" type="string" length="255"></id>
+     <property name="feednumber" column="feednumber" type="java.lang.Integer"></property>
+     <property name="feedcontent" column="feedcontent" type="string" length="2000"></property>
+     <property name="feedname" column="feedname" type="string" length="255" ></property>
+   </class>
+
+</hibernate-mapping>

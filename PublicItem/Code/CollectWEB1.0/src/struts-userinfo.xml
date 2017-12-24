@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/*
+ * $Id: struts-plugin.xml 722219 2008-12-01 20:41:26Z musachy $
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *  http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+-->
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+    
+    <package name="user" namespace="/userinfo" extends="sms-pkg">
+    	<action name="client" class="com.collect.action.BasicAction" method="ToClient">
+    		<result name="toClient">../jsps/client.jsp</result>
+    	</action>
+    	
+    	<action name="feedback" class="com.collect.action.BasicAction" method="ToFeedBack">
+    		<result name="toFeedBack">../jsps/collfeedback.jsp</result>
+    	</action>
+		
+		<action name="import" class="com.collect.action.UserInfoAction" method="ForImport">
+    		<result name="successimport" type="redirectAction">coll</result>
+    	</action>
+    	
+    	<action name="logout" class="com.collect.action.BasicAction" method="ToLogout">
+    		<result name="successlogout" type="redirectAction">nologin</result>
+    	</action>
+    	
+    	<action name="nologin" class="com.collect.action.BasicAction" method="NoLogin">
+    		<result name="nologin">../jsps/tologin.jsp</result>
+    	</action>
+    	
+       <action name="addfile" class="com.collect.action.BasicAction" method="AddFile">
+          <result name="addok" type="json">
+          	<param name="root">data</param>
+          </result>
+       </action>
+       
+       <action name="addmenu" class="com.collect.action.BasicAction" method="AddMenu">
+          <result name="addok" type="json">
+          	<param name="root">data</param>
+          </result>
+       </action>
+       
+       <action name="coll" class="com.collect.action.BasicAction" method="ReFresh">
+          <result name="getdata">../jsps/hompage.jsp</result>
+       </action>
+		
+	   <action name="addfeedback" class="com.collect.action.BasicAction" method="AddFeedBreak">
+    		<result name="tofeedback" type="redirectAction">feedback</result>
+    </action>
+    	
+	   <action name="ajax" class="com.collect.action.BasicAction" method="AjaxFindUrl">
+          <result name="geturldata" type="json">
+          		<param name="root">urlJsondata</param>
+          </result>
+       </action>
+       
+       <action name="removeurl" class="com.collect.action.BasicAction" method="RemoveUrl">
+          <result name="removeok" type="json">
+          	<param name="root">data</param>
+          </result>
+       </action>
+       
+       <action name="addfeednumber" class="com.collect.action.BasicAction" method="AddFeedNumber">
+          <result name="addok" type="json">
+          	<param name="root">data</param>
+          </result>
+       </action>
+
+    </package>
+
+</struts>

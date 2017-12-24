@@ -1,0 +1,35 @@
+
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <!-- 操作的最终目标就是为了构建一个能够创建session的sessionFactory -->
+<session-factory>
+
+	<!-- 数据库JDBC连接信息 -->
+	<property name="connection.url">jdbc:mysql://127.0.0.1:3306/dbcollect?useSSL=false</property>
+	<property name="connection.username">collname</property><!-- root/collname-->
+	<property name="connection.password">collpassword</property><!-- 12345678/collpassword -->
+	<property name="connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+
+	<!-- 方言：告诉hibernate，所连接的是mysql数据库，需要根据mysql数据库做sql语句优化 -->
+	<property name="dialect">org.hibernate.dialect.DB2Dialect</property>
+
+	<property name="show_sql">true</property>
+	<property name="format_sql">true</property>
+	<mapping resource="com/collect/domain/UrlCollect.hbm.xml" />
+	<mapping resource="com/collect/domain/UserInfo.hbm.xml" />
+	<mapping resource="com/collect/domain/IDentification.hbm.xml" />
+	<mapping resource="com/collect/domain/CollUrl.hbm.xml" />
+	<mapping resource="com/collect/domain/FeedBack.hbm.xml" />
+</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.collect.domain">
+
+   <class name="UrlCollect" table="urlcontent">
+     <id name="kid" column="kid" type="string" length="45"></id>
+     <property name="tid" column="tid" type="string" length="10" not-null="true"></property>
+     <property name="href" column="href" type="string" length="100" not-null="true"></property>
+     <property name="title" column="title" type="string" length="100" not-null="true"></property>
+     <property name="logo" column="logo" type="binary"></property>
+     <property name="urldescribe" column="urldescribe" type="string" length="300"></property>
+     <property name="field" column="field" type="string" length="50"></property>
+     <property name="candidate" column="candidate" type="boolean"></property>
+     <property name="childen" column="childen" type="boolean"></property>
+     <property name="open" column="open" type="boolean"></property>
+     <property name="fid" column="fid" type="string" length="10"></property>
+  	 <!-- <set name="menu_url" table="urlmenu">
+  	 	<key column="kid"/>
+  	 	<many-to-many class="com.collect.domain.UrlMenu" column="kid"/>
+  	 </set> -->
+  </class>
+
+</hibernate-mapping>

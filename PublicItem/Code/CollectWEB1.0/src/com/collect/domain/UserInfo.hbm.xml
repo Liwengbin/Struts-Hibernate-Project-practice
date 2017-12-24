@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.collect.domain">
+
+  <class name="UserInfo" table="userinfo">
+     <id name="user_email" column="email" type="string" length="45"></id>
+     <property name="user_name" column="name" type="string" length="100"></property>
+     <property name="user_password" column="pwd" type="string" length="100"></property>
+     <property name="lastloction" column="lastloction" type="string" length="100"></property>
+     <property name="user_img" column="img" type="binary"></property>
+     <!-- <set name="menu_user" table="urlmenu">
+  	 	<key column="email"/>
+  	 	<many-to-many class="com.collect.domain.UrlMenu" column="email"/>
+  	 </set> -->
+  </class>
+
+</hibernate-mapping>

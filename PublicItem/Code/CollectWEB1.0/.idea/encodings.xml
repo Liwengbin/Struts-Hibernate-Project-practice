@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/collect/action/BasicAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/dao/UrlContentDaoImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/domain/CollUrl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/domain/UserInfo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/exception/CollException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/exception/dataAccessException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/service/CaptureUrlServiceImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/service/UrlContentServiceImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/service/UserInfoServicImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/collect/statical/StaticFunction.java" charset="GBK" />
+  </component>
+</project>
