@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.collect.domain">
+
+   <class name="CollUrl" table="collurl">
+     <id name="kid" column="kid" type="string" length="45"></id>
+     <property name="href" column="href" type="string" length="100"></property>
+     <property name="title" column="title" type="string" length="100" not-null="true"></property>
+     <property name="logo" column="logo" type="string" length="2000" ></property>
+     <property name="father" type="java.lang.Boolean" column="father"></property>
+     <property name="loction" column="loction" type="string" length="10"></property>
+     <property name="fid" column="fid" type="string" length="50"></property>
+  </class>
+
+</hibernate-mapping>

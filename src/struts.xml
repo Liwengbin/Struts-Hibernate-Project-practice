@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.ui.theme" value="simple"/>
+    <constant name="struts.action.extension" value="html,do,action"/>
+
+   
+    <!-- sms系统基础包 -->
+    <package name="sms-pkg" abstract="true" namespace="/" extends="json-default">
+          
+        <interceptors>
+        
+           <interceptor name="authInterceptor" class="com.collect.interceptor.InterceptorInfo"/>
+           
+           <interceptor-stack name="UserInFo">
+              <interceptor-ref name="authInterceptor"/>
+              <interceptor-ref name="defaultStack"/>
+           </interceptor-stack>
+           
+           <interceptor-stack name="Default">
+              <interceptor-ref name="defaultStack"/>
+           </interceptor-stack>
+           
+        </interceptors>
+        
+        <default-interceptor-ref name="UserInFo"/>
+        
+        <global-results>
+            <result name="login">../jsps/tologin.jsp</result>
+        </global-results>
+        
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+            
+    </package>
+    
+
+    
+    <include file="struts-security.xml" />   
+    <include file="struts-userinfo.xml" />
+</struts>
